@@ -9,3 +9,35 @@ html, body {
     width: 100%;
     background-color: rgb(54, 54, 54);
 }
+
+
+
+.header {
+    background-color: rgba(108, 85, 150, 0.7);
+    
+}
+    
+    
+
+.header__nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    
+}
+.header__nav a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+.header__nav-item {
+    font-size: 2rem;
+
+}
+
+
+.header__nav-item:not(:first-child):not(:last-child) {
+    margin: 0 13rem;
+}
