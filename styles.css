@@ -1,3 +1,5 @@
+/*STYLES FOR WRAPPERS AND ROOT ELEMENTS*/
+
 html, body {
     margin: 0;
     height: 100%;
@@ -11,6 +13,7 @@ html, body {
 }
 
 
+/*HEADER AND NAVIGATION*/
 
 .header {
     background-color: rgba(108, 85, 150, 0.7);
@@ -18,7 +21,6 @@ html, body {
 }
     
     
-
 .header__nav {
     list-style: none;
     display: flex;
@@ -33,11 +35,19 @@ html, body {
 
 
 .header__nav-item {
-    font-size: 2rem;
+    font-size: 3rem;
+    padding: 1rem 0;
 
 }
 
 
 .header__nav-item:not(:first-child):not(:last-child) {
-    margin: 0 13rem;
+    margin: 0 20%;
+}
+
+
+/* MAIN CONTENT SECTION. EVERYTHING BETWEEN HEADER AND FOOTER*/
+
+.main-content {
+    height: 100%;
 }
