@@ -42,7 +42,7 @@ body {
 }
 .header__nav-item a {
     display: block;
-    padding: 30px 20px; /* Adjusted padding */
+    padding: 30px 20px;
     text-decoration: none;
     color: inherit;
     border: 4px solid black; 
@@ -109,8 +109,23 @@ body {
     height: 16rem;
     width: 35rem;
     background-color: rgba(108, 85, 150, 0.7);
-    
+    background-image: url('path/to/your/image1.jpg'); 
+    background-size: cover;
+    background-position: center;
 }
+
+.main-content__box:nth-child(2) {
+    background-image: url('path/to/your/image2.jpg'); 
+}
+
+.main-content__box:nth-child(3) {
+    background-image: url('path/to/your/image3.jpg'); 
+}
+
+.main-content__box:nth-child(4) {
+    background-image: url('path/to/your/image4.jpg'); 
+}
+
 
 .main-content__box:nth-child(even) {
     justify-self: end;
