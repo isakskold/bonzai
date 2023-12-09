@@ -114,15 +114,15 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     gap: 20px;
-    justify-content: space-between;
+    
 }
 
 .main-content__box {
     display: flex;
-    justify-content: end;
     flex-direction: column;
+    justify-content: end;
     height: 16rem;
-    width: 35rem;
+    width: 100%;
     background-image: url('img/01-day.jpg'); 
     background-size: cover;
     background-position: center;
@@ -140,10 +140,6 @@ body {
     background-image: url('img/04-night.jpg'); 
 }
 
-
-.main-content__box:nth-child(even) {
-    justify-self: end;
-}
 
 
 .main-content__text-section {
@@ -201,7 +197,7 @@ body {
 
     .header__nav-item {
         width: auto;
-        font-size: 3rem;
+        font-size: 2rem;
     }
 
     .header__nav-item a {
@@ -223,4 +219,16 @@ body {
     }
 
 
+}
+
+@media screen and (max-width: 708px) {
+    .header__nav-item a {
+        font-size: calc(3rem - 0.9vw); /* Adjust the ratio as needed */
+        padding: auto;
+    }
+
+  
+
+    
+    
 }
