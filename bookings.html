@@ -3,12 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
     <link rel="stylesheet" href="styles.css">
-    <title>Bonzai</title>
 </head>
+
 <body>
     <div class="wrapper">
-        
+
+        <header class="header">
+            <nav>
+                <ul class="header__nav">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-links">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="about.html" class="header__nav-links">About</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="bookings.html" class="header__nav-links">Bookings</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="main-content">
+            <article class="search-input-container">
+                <form class="search-form">
+                    <input type="checkbox" id="searchToggle">
+                    <input type="text" id="searchInput" name="search" placeholder="Enter your search">
+                    <label for="searchToggle" class="search-button">Search</label>
+                </form>
+            <aside class="search-results">
+                <p>Search result 1</p>
+                <p>Search result 2</p>
+                <p>Search result 3</p>
+                <p>Search result 4</p>
+                <p>Search result 5</p>
+            </aside>
+            </article>
+
+
+        </main>
+
+        <footer class="footer">
+            <aside class="footer__text-section">
+                <section class="footer__content">
+                    <h2 class="footer__title">Contact Title</h2>
+                    <p class="footer__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas, illum?</p>
+                </section>
+            </aside>
+        </footer>
+
     </div>
 </body>
 </html>
