@@ -81,7 +81,9 @@ body {
 
 /* MAIN CONTENT SECTION. EVERYTHING BETWEEN HEADER AND FOOTER*/
 
-
+.main-content {
+    text-align: center;
+}
 
 
 .main-content__hero {
@@ -117,6 +119,7 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(45%, 1fr));
     gap: 20px;
+    padding-bottom: 20px;
     
 }
 
@@ -173,7 +176,7 @@ body {
 
 /*BOOKING CSS MAIN*/
 
-.search-input-container {
+.main-content__container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,9 +230,59 @@ body {
 }
 
 
+/*ABOUT US CSS MAIN*/
 
 
-/*FOOTER AND @MEDIA*/
+
+
+.about-content {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(calc(33.33% - 20px), 1fr));
+    
+    gap: 20px;
+    
+}
+
+.main-content h1 {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.about-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about-box h2,
+.about-box p {
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.about-box::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0));
+    pointer-events: none;
+    width: 20px;
+    height: 100%;
+}
+
+.about-content > :nth-child(4),
+.about-content > :nth-child(5) {
+    grid-column: span 3;
+}
+
+
+/*FOOTER*/
 
 
 .footer {
@@ -275,6 +328,8 @@ body {
 }
 
 
+
+/*MEDIA*/
 
 @media screen and (max-height: 1000px) {
     .main-content__hero {
@@ -325,12 +380,13 @@ body {
 
 }
 
-@media screen and (max-width: 745px) {
+@media screen and (max-width: 762px) {
     .header__nav-item a {
         font-size: 1.5rem; 
         padding: 20px 40px;
         max-height: 77px;
     }
+
 
     .header {
         height: 77px;
@@ -340,6 +396,17 @@ body {
     .search-results {
         width: 320px
     }
+
+    .about-content {
+        display: block;
+        
+    }
+
+    .about-box {
+        margin-bottom: 20px;
+    }
+
+    
 }
 
 @media screen and (max-width: 584px) {
@@ -355,3 +422,5 @@ body {
         padding: 20px 5px;
     }
 }
+
+
