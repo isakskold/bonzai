@@ -1,4 +1,4 @@
-/*STYLES FOR WRAPPERS AND ROOT ELEMENTS*/
+
 
 *{
     box-sizing: border-box;
@@ -79,7 +79,7 @@ body {
 }
 
 
-/* MAIN CONTENT SECTION. EVERYTHING BETWEEN HEADER AND FOOTER*/
+/* MAIN CONTENT SECTION*/
 
 .main-content {
     text-align: center;
@@ -230,6 +230,7 @@ body {
 }
 
 
+
 /*ABOUT US CSS MAIN*/
 
 
@@ -291,9 +292,6 @@ body {
     height: 143px;
     width: 100%;
     
-    
-    
-    
 }
 
 .footer__content {
@@ -305,7 +303,6 @@ body {
     background-color:rgba(0, 0, 0, 0.5);
     padding-left: 2%;
     padding-right: 2%;
-    
     
 }
 
@@ -321,7 +318,6 @@ body {
 
 .footer__text-section {
     display: flex;
-    
     width: 100%;
     
     
